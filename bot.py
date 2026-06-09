@@ -19,7 +19,7 @@ from telegram.ext import (
 TOKEN = "8863643517:AAHtaeUqeJO5LyBS8Rm2Awyc0PbDxw-7sfo"
 
 # Прокси ТОЛЬКО для Telegram — Авито ходит напрямую
-None = "None"
+TELEGRAM_PROXY = None
 
 DATA_FILE = Path("data.json")
 CHECK_INTERVAL = 6 * 60             # проверка каждые 6 минут
