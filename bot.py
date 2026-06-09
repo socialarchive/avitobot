@@ -19,7 +19,7 @@ from telegram.ext import (
 TOKEN = "8863643517:AAHtaeUqeJO5LyBS8Rm2Awyc0PbDxw-7sfo"
 
 # Прокси ТОЛЬКО для Telegram — Авито ходит напрямую
-TELEGRAM_PROXY = "socks5://148.251.68.232:8888"
+None = "None"
 
 DATA_FILE = Path("data.json")
 CHECK_INTERVAL = 6 * 60             # проверка каждые 6 минут
@@ -331,8 +331,8 @@ def main() -> None:
     builder = (
         Application.builder()
         .token(TOKEN)
-        .proxy(TELEGRAM_PROXY)
-        .get_updates_proxy(TELEGRAM_PROXY)
+        .proxy(None)
+        .get_updates_proxy(None)
         .connect_timeout(30)
         .read_timeout(30)
         .write_timeout(30)
